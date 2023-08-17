@@ -1,10 +1,10 @@
 {
   "type": "mysql",
-  "host": "localhost",
-  "port": 3306,
-  "username": "root",
-  "password": "root",
-  "database": "blog",
+  "host": "192.168.252.159",
+  "port": 3209,
+  "username": "procdev",
+  "password": "c0aed994-8fbf",
+  "database": "shencai_dbcenter_ys",
   "entities": [
     "dist/**/*.entity{.ts,.js}"
   ],

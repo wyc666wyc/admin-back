@@ -15,9 +15,16 @@ import { UpdateSourceDto } from './dto/update-source.dto';
 export class SourceController {
   constructor(private readonly sourceService: SourceService) {}
 
-  @Post()
-  create(@Body() createSourceDto: CreateSourceDto) {
-    return this.sourceService.create(createSourceDto);
+  // @Post()
+  // create(@Body() createSourceDto: CreateSourceDto) {
+  //   return this.sourceService.create(createSourceDto);
+  // }
+
+  @Get('carbon')
+  async getCarbon() {
+    const req = await this.sourceService.carbon()
+    console.log(req)
+    return 1
   }
 
   @Get('findAll')
